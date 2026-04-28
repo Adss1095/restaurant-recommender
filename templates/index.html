@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Restaurant Recommender</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- 🌌 Background -->
+    <div class="background"></div>
+
+    <!-- 🍽️ Main Chat Container -->
+    <div class="chat-container">
+
+        <!-- Header -->
+        <div class="chat-header">
+            🍽️ FoodieBot
+        </div>
+
+        <!-- Chat Box -->
+        <div id="chat-box"></div>
+
+        <!-- Input Area -->
+        <div class="input-area">
+            <input 
+                type="text" 
+                id="user-input" 
+                placeholder="Type a restaurant name..."
+            >
+            <button onclick="sendMessage()">➤</button>
+        </div>
+
+    </div>
+
+    <!-- JS -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
